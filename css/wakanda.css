@@ -19,88 +19,97 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64,
-          0.837641) 100%, rgba(2, 23, 64, 0) 100%) no-repeat;
-  }
-  
-  nav {
-    display: flex;
-    width: 85%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    /* border: 2px solid red; */
-  }
-  
-  .logo {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
-    flex-wrap: wrap;
-    /* border: 2px solid green; */
-  }
-  
-  .logo .icon_SAYNA {
-    width: 20px;
-  }
-  
-  .logo .icon_MARVEL {
-    width: 50px;
-  }
-  
-  .logo .icon_x {
-    width: 10px;
-  }
-  
-  .logo img {
-    margin: 2px;
-  }
-  
-  .nav-bar {
-    /* border: 2px solid green; */
-    position: relative;
-    right: 60px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .nav-bar a {
-    font-family: beyno-regular;
-    margin: 20px;
-    color: white;
-    font-size: 12px;
-    cursor: pointer;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  .sec1{
-    background-image: url(../images/Wakanda/Pantherwakanda1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    top: -30px;
-    left: 0;
-    right: 0;
-    height: 700px;
-   /* justify-content: space-between; */
-   position: relative;
+body {
+  background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64,
+        0.837641) 100%, rgba(2, 23, 64, 0) 100%) no-repeat;
+}
+
+nav {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  /* border: 2px solid red; */
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 2px solid green; */
+}
+
+.logo .icon_SAYNA {
+  width: 20px;
+}
+
+.logo .icon_MARVEL {
+  width: 50px;
+}
+
+.logo .icon_x {
+  width: 10px;
+}
+
+.logo img {
+  margin: 2px;
+}
+
+.nav-bar {
+  /* border: 2px solid green; */
+  position: relative;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-bar a {
+  font-family: beyno-regular;
+  margin: 20px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-bar .active {
+  color: #857B9C;
+  font-weight: lighter;
+  text-decoration: underline;
+}
+
+
+/* section1 */
+.sec1 {
+  background-image: url(../images/Wakanda/Pantherwakanda1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  top: -30px;
+  left: 0;
+  right: 0;
+  height: 700px;
+  /* justify-content: space-between; */
+  position: relative;
 }
 
 .sec1 .container .left {
   color: white;
   position: relative;
-  left: 125px;
+  left: 110px;
   top: 250px;
 }
 
@@ -109,13 +118,19 @@
   color: white;
   font-size: 42px;
   margin: 12px 0;
+  color: #857B9C;
+  font-weight: lighter;
 }
 
 .sec1 .container .left h2 {
   font-family: wakanda_forever;
   color: white;
   font-size: 25px;
+  color: #857B9C;
+  font-weight: lighter;
 }
+
+
 
 .sec1 .container .left p {
   font-family: ceantarell;
@@ -127,49 +142,173 @@
 }
 
 
-.sec2{
-  background-image: url(../images/Wakanda/Pantherwakanda2.png);
+
+/* sec2 */
+.sec2 .container {
+  display: flex;
+  align-items: center;
+  max-width: 1115px;
+  margin: 0 auto;
+  text-align: justify;
+  height: 100%;
+}
+
+.sec2 .container .left {
+  /* border: 2px solid red; */
+  color: white;
+  position: relative;
+  left: 80px;
+  width: 39%;
+  margin-bottom: 50px;
+}
+
+.sec2 .container .left h3 {
+  font-family: beyno-regular;
+  margin: 10px 0;
+  color: #857B9C;
+  font-weight: lighter;
+}
+
+.sec2 .container .left p {
+  font-size: 9px;
+  font-family: ceantarell;
+}
+
+.sec2 .container .left .lien-youtube {
+  background-color: rgb(53, 53, 159);
+  height: 200px;
+  margin: 48px 0 48px 0;
+}
+
+.sec2 .container .left .lien-youtube a {
+  color: white;
+  position: relative;
+  left: 50px;
+  font-size: 13px;
+  font-family: ceantarell;
+  top: 35px;
+}
+
+
+
+.sec2 .container .right {
+  /* border: 2px solid green; */
+  color: white;
+  position: relative;
+  left: 160px;
+  width: 40%;
+  margin-bottom: 50px;
+}
+
+.sec2 .container .right h3 {
+  font-family: beyno-regular;
+  margin: 10px 0;
+  color: #857B9C;
+  font-weight: lighter;
+}
+
+.sec2 .container .right p {
+  font-size: 9px;
+  font-family: ceantarell;
+}
+
+.sec2 .container .right .Pantherwakanda2-1 {
+  position: relative;
+  width: 445px;
+  /* border: 2px solid rebeccapurple; */
+
+}
+
+.sec2 .container .right .Pantherwakanda2-1 img {
+  width: 440px;
+  height: 250px;
+  /* margin: 1px 0; */
+}
+
+/* Footer */
+footer {
+  background-image: url(../images/All-pages/back_footer.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  bottom: 80px;
-  left: 0;
-  right: 0;
-  height: 600px;
-  width: 1080px;
- /* justify-content: space-between; */
- position: relative;
- opacity: 0.1px;
+  height: 70vh;
+  position: relative;
+  top: 50px;
 }
 
-.sec2 .container{
+footer .container {
   display: flex;
-    /* width: 85%; */
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    border: 2px solid red;
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
 }
 
-.sec2 .container .left1{
-  display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 2px solid green;
+footer .container .left .footer2 {
+  position: relative;
+  bottom: 140px;
+  left: 50px;
 }
 
-.sec2 .container .right1{
-  border: 2px solid green;
-  /* position: relative; */
-  /* right: 60px; */
+
+footer .container .left .footer2 img {
+  width: 100px;
+
+}
+
+footer .container .left .footer1 img {
+  width: 200px;
+}
+
+
+footer .container .right {
+  width: 600px;
+  color: white;
   display: flex;
-  /* flex-direction: row; */
-  list-style: none;
-  align-items: center;
-  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+footer .container .right .propos {
+  position: relative;
+  width: 200px;
+  height: 90px;
+  left: 70px;
+  font-family: ceantarell;
+}
+
+footer .container .right .trouver {
+  position: relative;
+  left: 160px;
+  width: 200px;
+  height: 80px;
+}
+
+footer .container .right .trouver h4 {
+  font-family: ceantarell;
+  font-size: 14px;
+}
+
+footer .container .right .trouver .img-footer {
+  position: relative;
+  top: 15px;
+}
+
+footer .container .right .trouver .img-footer img {
+  width: 30px;
+}
+
+.right .wkd p {
+  font-family: beyno-regular;
+  position: relative;
+  top: 8px;
+}
+
+footer .para-footer p {
+  color: white;
+  position: relative;
+  font-family: ceantarell;
+  top: 20px;
+  font-size: 10px;
+  left: 455px;
+  width: 360px;
 }

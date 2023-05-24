@@ -69,7 +69,7 @@
   .nav-bar {
     /* border: 2px solid green; */
     position: relative;
-    right: 60px;
+    right: 10px;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -79,13 +79,21 @@
   
   .nav-bar a {
     margin: 20px;
+    font-family: beyno-regular;
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     cursor: pointer;
+    text-decoration: none;
+  }
+
+  .nav-bar .active{
+    color: #857B9C;
+    font-weight: lighter;
+    text-decoration: underline;
   }
   
   
-  
+  /* Section1 */
   .sec1 .container {
     display: flex;
     align-items: center;
@@ -105,6 +113,8 @@
     font-size: 42px;
     font-family: beyno-regular;
     margin: 20px 0; 
+    color: #857B9C;
+    font-weight: lighter;
   }
   
   .sec1 .container .right p {

@@ -28,6 +28,7 @@ body {
         0.837641) 100%, rgba(2, 23, 64, 0) 100%) no-repeat;
 }
 
+/* ============= Navigation ============== */
 nav {
   display: flex;
   width: 85%;
@@ -36,7 +37,6 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 20px;
-  /* border: 2px solid red; */
 }
 
 .logo {
@@ -45,7 +45,6 @@ nav {
   list-style: none;
   align-items: center;
   flex-wrap: wrap;
-  /* border: 2px solid green; */
 }
 
 .logo .icon_SAYNA {
@@ -65,7 +64,6 @@ nav {
 }
 
 .nav-bar {
-  /* border: 2px solid green; */
   position: relative;
   right: 10px;
   display: flex;
@@ -78,10 +76,14 @@ nav {
 .nav-bar a {
   font-family: beyno-regular;
   margin: 20px;
-  color: white;
+  color: #FFFFFF;
   font-size: 15px;
   cursor: pointer;
   text-decoration: none;
+}
+
+.nav-bar a :hover {
+  text-decoration: underline;
 }
 
 .nav-bar .active {
@@ -91,32 +93,33 @@ nav {
 }
 
 
-/* section1 */
+/* ========= section 1 ============= */
 .sec1 {
   background-image: url(../images/Wakanda/Pantherwakanda1.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 1400px;
+}
+
+.sec1 .container {
   display: flex;
-  top: -30px;
+  top: 10px;
   left: 0;
   right: 0;
-  height: 700px;
-  /* justify-content: space-between; */
-  position: relative;
+  height: 680px;
 }
 
 .sec1 .container .left {
-  color: white;
+  color: #FFFFFF;
   position: relative;
   left: 110px;
-  top: 250px;
+  top: 220px;
 }
 
 .sec1 .container .left h1 {
   font-family: beyno-regular;
-  color: white;
-  font-size: 42px;
+  color: #FFFFFF;
+  font-size: 44px;
   margin: 12px 0;
   color: #857B9C;
   font-weight: lighter;
@@ -124,47 +127,57 @@ nav {
 
 .sec1 .container .left h2 {
   font-family: wakanda_forever;
-  color: white;
+  text-align: justify;
+  color: #FFFFFF;
   font-size: 25px;
   color: #857B9C;
   font-weight: lighter;
+  letter-spacing: 3px;
 }
-
-
 
 .sec1 .container .left p {
   font-family: ceantarell;
-  color: white;
+  color: #FFFFFF;
+  text-align: justify;
+  width: 310px;
   position: relative;
   left: 0px;
   top: 15px;
-  font-size: 11px;
+  font-size: 9px;
 }
 
 
 
-/* sec2 */
+/* ============= Section 2 ============= */
+.sec2 {
+  background-image: url(../images/Wakanda/Pantherwakanda2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 1000px;
+  padding: 100px 0 70px 0;
+  position: relative;
+}
+
 .sec2 .container {
   display: flex;
   align-items: center;
   max-width: 1115px;
   margin: 0 auto;
   text-align: justify;
-  height: 100%;
+  position: relative;
 }
 
 .sec2 .container .left {
-  /* border: 2px solid red; */
-  color: white;
+  color: #FFFFFF;
   position: relative;
   left: 80px;
   width: 39%;
-  margin-bottom: 50px;
+
 }
 
 .sec2 .container .left h3 {
   font-family: beyno-regular;
-  margin: 10px 0;
+  margin: 15px 0;
   color: #857B9C;
   font-weight: lighter;
 }
@@ -181,7 +194,7 @@ nav {
 }
 
 .sec2 .container .left .lien-youtube a {
-  color: white;
+  color: #FFFFFF;
   position: relative;
   left: 50px;
   font-size: 13px;
@@ -189,15 +202,11 @@ nav {
   top: 35px;
 }
 
-
-
 .sec2 .container .right {
-  /* border: 2px solid green; */
-  color: white;
+  color: #FFFFFF;
   position: relative;
   left: 160px;
   width: 40%;
-  margin-bottom: 50px;
 }
 
 .sec2 .container .right h3 {
@@ -215,17 +224,14 @@ nav {
 .sec2 .container .right .Pantherwakanda2-1 {
   position: relative;
   width: 445px;
-  /* border: 2px solid rebeccapurple; */
-
 }
 
 .sec2 .container .right .Pantherwakanda2-1 img {
   width: 440px;
   height: 250px;
-  /* margin: 1px 0; */
 }
 
-/* Footer */
+/* =============== Footer ================ */
 footer {
   background-image: url(../images/All-pages/back_footer.png);
   background-repeat: no-repeat;
@@ -233,7 +239,6 @@ footer {
   background-size: cover;
   height: 70vh;
   position: relative;
-  top: 50px;
 }
 
 footer .container {
@@ -244,12 +249,16 @@ footer .container {
   top: 100px;
 }
 
-footer .container .left .footer2 {
+footer .container .left {
   position: relative;
-  bottom: 140px;
   left: 50px;
 }
 
+footer .container .left .footer2 {
+  position: relative;
+  bottom: 140px;
+  left: 55px;
+}
 
 footer .container .left .footer2 img {
   width: 100px;
@@ -260,32 +269,46 @@ footer .container .left .footer1 img {
   width: 200px;
 }
 
-
 footer .container .right {
   width: 600px;
-  color: white;
+  color: #FFFFFF;
   display: flex;
   margin: 0 auto;
+  position: relative;
+  left: 60px;
 }
 
 footer .container .right .propos {
   position: relative;
   width: 200px;
   height: 90px;
-  left: 70px;
+  left: 100px;
+}
+
+footer .container .right .propos h4 {
   font-family: ceantarell;
+  font-size: 22px;
+  font-weight: lighter;
+  letter-spacing: 28%;
+}
+
+footer .container .right .propos p span {
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
 footer .container .right .trouver {
   position: relative;
-  left: 160px;
-  width: 200px;
+  left: 130px;
+  width: 280px;
   height: 80px;
 }
 
 footer .container .right .trouver h4 {
   font-family: ceantarell;
-  font-size: 14px;
+  font-size: 22px;
+  font-weight: lighter;
+  letter-spacing: 28%;
 }
 
 footer .container .right .trouver .img-footer {
@@ -300,15 +323,16 @@ footer .container .right .trouver .img-footer img {
 .right .wkd p {
   font-family: beyno-regular;
   position: relative;
+  font-weight: lighter;
   top: 8px;
 }
 
 footer .para-footer p {
-  color: white;
+  color: #FFFFFF;
   position: relative;
   font-family: ceantarell;
   top: 20px;
   font-size: 10px;
-  left: 455px;
-  width: 360px;
+  left: 545px;
+  width: 380px;
 }

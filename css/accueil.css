@@ -1,3 +1,4 @@
+/* ============= Importation Font =============== */
 @font-face {
   font-family: panthera;
   src: url('../Police/panthera/panthera.otf');
@@ -31,10 +32,49 @@ h1,h2,h3,h5,h6 {
 
 body {
   margin: 0;
-  height: 3000px;
+  height: 3030px;
   background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64,
         0.837641) 100%, rgba(2, 23, 64, 0) 100%) no-repeat;
 }
+
+
+
+/* ============== Line vertical et réseau sociaux ========== */
+.lige-reseau {
+  width: 60px;
+  height: 0;
+}
+
+.lige-reseau .lineV1 {
+  position: relative;
+  left: 25px;
+  width: 0px;
+  height: 300px;
+  border: 1px solid #857B9C;
+}
+
+.lige-reseau .lineV2 {
+  position: relative;
+  left: 45px;
+  width: 0px;
+  height: 158px;
+  bottom: 301px;
+  border: 1px solid #857B9C;
+}
+
+.lige-reseau .icon-reseau {
+  position: relative;
+  width: 20px;
+  left: 35px;
+  bottom: 300px;
+}
+
+.icon-reseau img {
+  width: 18px;
+  margin: 8px 0;
+}
+
+
 
 /* ============= Navigation =============== */
 nav {
@@ -45,6 +85,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 20px;
+  position: relative;
 }
 
 .logo {
@@ -59,12 +100,27 @@ nav {
   width: 20px;
 }
 
+.logo .icon_SAYNA:hover {
+  cursor: pointer;
+  filter: invert(84%) sepia(28%) saturate(4432%) hue-rotate(247deg) brightness(97%) contrast(93%);
+}
+
 .logo .icon_MARVEL {
   width: 50px;
 }
 
+.logo .icon_MARVEL:hover {
+  cursor: pointer;
+  filter: invert(84%) sepia(28%) saturate(4432%) hue-rotate(247deg) brightness(97%) contrast(93%);
+}
+
 .logo .icon_x {
   width: 10px;
+}
+
+.logo .icon_x:hover {
+  cursor: pointer;
+  filter: invert(84%) sepia(28%) saturate(4432%) hue-rotate(247deg) brightness(97%) contrast(93%);
 }
 
 .logo img {
@@ -90,19 +146,26 @@ nav {
   text-decoration: none;
 }
 
-.nav-bar .active{
+.nav-bar a:hover {
+  text-decoration: underline;
+  color: #857B9C;
+}
+
+.nav-bar .active {
   color: #857B9C;
   font-weight: lighter;
   text-decoration: underline;
 }
 
 
-/* =============== Section1 =============== */
+
+/* =============== #Home =============== */
 .sec1 .container {
   display: flex;
   align-items: center;
   max-width: 1115px;
   margin: 0 auto;
+  animation: fadeIN 1s;
 }
 
 .sec1 .container .left {
@@ -150,8 +213,7 @@ nav {
 
 
 
-/* =============== Section2 =============== */
-
+/* =============== #Contenue =============== */
 .box {
   display: flex;
   margin: 0 auto;
@@ -166,6 +228,7 @@ nav {
   grid-template-columns: 25% 25% 25% 25%;
   flex-direction: row;
   bottom: 45px;
+  animation: fadeIN 1s;
 }
 
 .box .Pantherhome2 {
@@ -252,14 +315,15 @@ nav {
 
 
 
-/*================= Section 3 ============== */
+/*================= #About ============== */
 .sec3 .container {
   display: flex;
   align-items: center;
   max-width: 1115px;
   margin: 0 auto;
   text-align: justify;
-  height: 100%;
+  /* height: 100%; */
+  animation: fadeIN 1s;
 }
 
 .sec3 .container .left {
@@ -359,7 +423,8 @@ nav {
 }
 
 
-/* =============== Contact =============== */
+
+/* =============== #Contact =============== */
 .sec4 {
   background-image: url(../images/Accueil/Pantherhome7.png);
   background-repeat: no-repeat;
@@ -379,6 +444,7 @@ nav {
   align-items: center;
   position: relative;
   top: 140px;
+  animation: fadeIN 1s;
 }
 
 .contact p {
@@ -413,9 +479,9 @@ form {
   height: 50px;
   padding: 0 25px;
   border: 1px solid black;
+  color: #0B0B0B;
+  font-size: 18px;
 }
-
-
 
 .contac-box textarea.form-control {
   height: 140px;
@@ -423,6 +489,7 @@ form {
   border-radius: 38px;
   padding: 10px 28px;
   border: 1px solid black;
+  font-size: 19px;
 }
 
 .btn-envoyer button {
@@ -433,17 +500,16 @@ form {
   width: 174px;
   height: 54px;
   position: relative;
-  left: 500px;
-  top: 68px;
+  top:10px;
   cursor: pointer;
 }
 
-.btn-envoyer button:hover{
+.btn-envoyer button:hover {
   box-shadow: 0 0 20px #021740;
 }
 
 ::placeholder {
-  font-size: 12px;
+  font-size: 13px;
   position: relative;
   color: black;
 }
@@ -455,6 +521,7 @@ form {
   background: linear-gradient(to right, #0b0c0e 13%, #071634 100%);
   height: 150px;
   bottom: 100px;
+  opacity: 0.9;
 }
 
 
@@ -465,7 +532,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 70vh;
+  height: 65vh;
   position: relative;
   bottom: 100px;
 }
@@ -476,17 +543,21 @@ footer .container {
   margin: 0 auto;
   position: relative;
   top: 100px;
+ 
 }
 
-footer .container .left{
+footer .container .left {
   position: relative;
   left: 50px;
+  transition: 0.300s;
+  animation: fadeIN 1s;
 }
 
 footer .container .left .footer2 {
   position: relative;
   bottom: 140px;
-  left: 55px;
+  left: 50px;
+  width: 100px;
 }
 
 
@@ -499,6 +570,17 @@ footer .container .left .footer1 img {
   width: 200px;
 }
 
+footer .container .left:hover {
+  transition: 0.300s;
+  transform: scale(120%);
+  align-items: center;
+}
+
+footer .container .left .footer2:hover {
+  cursor: pointer;
+  filter: invert(84%) sepia(28%) saturate(4432%) hue-rotate(247deg) brightness(97%) contrast(93%);
+}
+
 footer .container .right {
   width: 600px;
   color: #FFFFFF;
@@ -506,6 +588,7 @@ footer .container .right {
   margin: 0 auto;
   position: relative;
   left: 60px;
+  animation: fadeIN 1s;
 }
 
 footer .container .right .propos {
@@ -515,24 +598,33 @@ footer .container .right .propos {
   left: 100px;
 }
 
-footer .container .right .propos h4{
+footer .container .right .propos h4 {
   font-family: ceantarell;
   font-size: 22px;
   font-weight: lighter;
   letter-spacing: 28%;
 }
 
-footer .container .right .propos p span{
+footer .container .right .propos a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer .container .right .propos a:hover {
+  text-decoration: underline;
+}
+
+footer .container .right .propos a span {
   text-transform: uppercase;
   font-weight: lighter;
 }
-
 
 footer .container .right .trouver {
   position: relative;
   left: 130px;
   width: 280px;
   height: 80px;
+  text-decoration: none;
 }
 
 footer .container .right .trouver h4 {
@@ -545,17 +637,33 @@ footer .container .right .trouver h4 {
 footer .container .right .trouver .img-footer {
   position: relative;
   top: 15px;
+  transition: 0.300s;
+  text-decoration: none;
 }
 
-footer .container .right .trouver .img-footer img {
+footer .container .right .trouver .img-footer a {
+  text-decoration: none;
+}
+
+footer .container .right .trouver .img-footer a img {
   width: 30px;
+  cursor: pointer;
 }
 
-.right .wkd p {
-  font-family: beyno-regular;
+footer .container .right .trouver .img-footer:hover {
+  transition: 0.300s;
+  transform: scale(120%);
+  align-items: center;
+}
+
+.right .propos .wkd a {
   position: relative;
-  font-weight: lighter;
   top: 8px;
+}
+
+.right .propos .wkd a span {
+  font-family: beyno-regular;
+  font-weight: lighter;
 }
 
 footer .para-footer p {
@@ -566,14 +674,29 @@ footer .para-footer p {
   font-size: 10px;
   left: 545px;
   width: 380px;
+  animation: fadeIN 1s;
+}
+
+
+/* ============== Animatio Fade IN ========== */
+@keyframes fadeIN{
+  from{
+    opacity: 0;
+    margin-left: -1500px;
+    width: 100%;
+  }
+
+  to{
+    opacity: 1;
+    margin-left: 0;
+  }
 }
 
 
 
 
 
-
-/* Responsive */
+/* ========   Résponsive ============== */
 @media (max-width: 1060px) {
   .sec1 .container .left h1 {
     color: #FFFFFF;
@@ -730,7 +853,6 @@ footer .para-footer p {
   }
 
 }
-
 
 @media (max-width: 528px) {
   nav {

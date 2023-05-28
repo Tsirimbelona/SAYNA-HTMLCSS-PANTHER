@@ -1,3 +1,4 @@
+/* ============= Importation Font =============== */
 @font-face {
   font-family: panthera;
   src: url('../Police/panthera/panthera.otf');
@@ -18,6 +19,7 @@
   src: url('../Police/cantarell/Cantarell-Regular.ttf');
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +29,7 @@ body {
   background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64,
         0.837641) 100%, rgba(2, 23, 64, 0) 100%) no-repeat;
 }
+
 
 /* ============= Navigation ============== */
 nav {
@@ -51,12 +54,27 @@ nav {
   width: 20px;
 }
 
+.logo .icon_SAYNA:hover {
+  cursor: pointer;
+  filter: invert(84%) sepia(28%) saturate(4432%) hue-rotate(247deg) brightness(97%) contrast(93%);
+}
+
 .logo .icon_MARVEL {
   width: 50px;
 }
 
+.logo .icon_MARVEL:hover {
+  cursor: pointer;
+  filter: invert(84%) sepia(28%) saturate(4432%) hue-rotate(247deg) brightness(97%) contrast(93%);
+}
+
 .logo .icon_x {
   width: 10px;
+}
+
+.logo .icon_x:hover {
+  cursor: pointer;
+  filter: invert(84%) sepia(28%) saturate(4432%) hue-rotate(247deg) brightness(97%) contrast(93%);
 }
 
 .logo img {
@@ -82,8 +100,9 @@ nav {
   text-decoration: none;
 }
 
-.nav-bar a :hover {
+.nav-bar a:hover {
   text-decoration: underline;
+  color: #857B9C;
 }
 
 .nav-bar .active {
@@ -93,7 +112,7 @@ nav {
 }
 
 
-/* ========= section 1 ============= */
+/* ========= #home ============= */
 .sec1 {
   background-image: url(../images/Wakanda/Pantherwakanda1.png);
   background-repeat: no-repeat;
@@ -114,6 +133,7 @@ nav {
   position: relative;
   left: 110px;
   top: 220px;
+  animation: fadeIN 1s;
 }
 
 .sec1 .container .left h1 {
@@ -148,11 +168,12 @@ nav {
 
 
 
-/* ============= Section 2 ============= */
+/* ============= #about ============= */
 .sec2 {
   background-image: url(../images/Wakanda/Pantherwakanda2.png);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position-y: -70px;
+  background-position-x: 130px;
   background-size: 1000px;
   padding: 100px 0 70px 0;
   position: relative;
@@ -165,6 +186,7 @@ nav {
   margin: 0 auto;
   text-align: justify;
   position: relative;
+  animation: fadeIN 1s;
 }
 
 .sec2 .container .left {
@@ -191,6 +213,7 @@ nav {
   background-color: rgb(53, 53, 159);
   height: 200px;
   margin: 48px 0 48px 0;
+
 }
 
 .sec2 .container .left .lien-youtube a {
@@ -200,6 +223,7 @@ nav {
   font-size: 13px;
   font-family: ceantarell;
   top: 35px;
+  text-decoration: none;
 }
 
 .sec2 .container .right {
@@ -231,6 +255,8 @@ nav {
   height: 250px;
 }
 
+
+
 /* =============== Footer ================ */
 footer {
   background-image: url(../images/All-pages/back_footer.png);
@@ -252,12 +278,15 @@ footer .container {
 footer .container .left {
   position: relative;
   left: 50px;
+  transition: 0.300s;
+  animation: fadeIN 1s;
 }
 
 footer .container .left .footer2 {
   position: relative;
   bottom: 140px;
-  left: 55px;
+  left: 50px;
+  width: 100px;
 }
 
 footer .container .left .footer2 img {
@@ -269,6 +298,17 @@ footer .container .left .footer1 img {
   width: 200px;
 }
 
+footer .container .left:hover {
+  transition: 0.300s;
+  transform: scale(120%);
+  align-items: center;
+}
+
+footer .container .left .footer2:hover {
+  cursor: pointer;
+  filter: invert(84%) sepia(28%) saturate(4432%) hue-rotate(247deg) brightness(97%) contrast(93%);
+}
+
 footer .container .right {
   width: 600px;
   color: #FFFFFF;
@@ -276,6 +316,7 @@ footer .container .right {
   margin: 0 auto;
   position: relative;
   left: 60px;
+  animation: fadeIN 1s;
 }
 
 footer .container .right .propos {
@@ -292,7 +333,16 @@ footer .container .right .propos h4 {
   letter-spacing: 28%;
 }
 
-footer .container .right .propos p span {
+footer .container .right .propos a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer .container .right .propos a:hover {
+  text-decoration: underline;
+}
+
+footer .container .right .propos a span {
   text-transform: uppercase;
   font-weight: lighter;
 }
@@ -302,6 +352,7 @@ footer .container .right .trouver {
   left: 130px;
   width: 280px;
   height: 80px;
+  text-decoration: none;
 }
 
 footer .container .right .trouver h4 {
@@ -314,17 +365,33 @@ footer .container .right .trouver h4 {
 footer .container .right .trouver .img-footer {
   position: relative;
   top: 15px;
+  transition: 0.300s;
+  text-decoration: none;
 }
 
-footer .container .right .trouver .img-footer img {
+footer .container .right .trouver .img-footer a {
+  text-decoration: none;
+}
+
+footer .container .right .trouver .img-footer a img {
   width: 30px;
+  cursor: pointer;
 }
 
-.right .wkd p {
-  font-family: beyno-regular;
+footer .container .right .trouver .img-footer:hover {
+  transition: 0.300s;
+  transform: scale(120%);
+  align-items: center;
+}
+
+.right .propos .wkd a {
   position: relative;
-  font-weight: lighter;
   top: 8px;
+}
+
+.right .propos .wkd a span {
+  font-family: beyno-regular;
+  font-weight: lighter;
 }
 
 footer .para-footer p {
@@ -335,4 +402,20 @@ footer .para-footer p {
   font-size: 10px;
   left: 545px;
   width: 380px;
+  animation: fadeIN 1s;
+}
+
+
+/* ============= Animation Fade IN =============== */
+@keyframes fadeIN{
+  from{
+    opacity: 0;
+    margin-left: -1500px;
+    width: 100%;
+  }
+
+  to{
+    opacity: 1;
+    margin-left: 0;
+  }
 }
